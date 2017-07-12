@@ -14,8 +14,8 @@ P(H|E) = P(E|H) * P(H)/P(E)
 
 where
 
-P(H) is the probability of hypothesis H being true. This is known as the prior probability.\n
-P(E) is the probability of the evidence(regardless of the hypothesis).\n
-P(E|H) is the probability of the evidence given that hypothesis is true.\n
-P(H|E) is the probability of the hypothesis given that the evidence is there.\n
+P(H) is the probability of hypothesis H being true. This is known as the prior probability.  
+P(E) is the probability of the evidence(regardless of the hypothesis).  
+P(E|H) is the probability of the evidence given that hypothesis is true.  
+P(H|E) is the probability of the hypothesis given that the evidence is there.  
 
