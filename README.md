@@ -29,7 +29,7 @@ Let's say that we have data on 1000 pieces of fruit. They happen to be Banana, O
 
 Whether it is Long
 Whether it is Sweet and
-If its color is Yellow.
+If its color is Yellow.  
 This is our 'training set.' We will use this to predict the type of any new fruit we encounter.  
 
 Type           Long | Not Long || Sweet | Not Sweet || Yellow |Not Yellow|Total  
@@ -40,6 +40,7 @@ Other Fruit |  100  |    100   || 150   |     50    ||   50   | 150      |  200
             ____________________________________________________________________  
 Total       |  500  |    500   || 650   |    350    ||  800   | 200      | 1000  
              ___________________________________________________________________  
+             
 We can pre-compute a lot of things about our fruit collection.  
 
 The so-called "Prior" probabilities. (If we didn't know any of the fruit attributes, this would be our guess.) These are our base rates.
