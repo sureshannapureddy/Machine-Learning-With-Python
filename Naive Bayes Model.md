@@ -29,41 +29,41 @@ Whether it is Long Whether it is Sweet and If its color is Yellow.
 This is our 'training set.' We will use this to predict the type of any new fruit we encounter.
 
 Type Long | Not Long    || Sweet | Not Sweet || Yellow |Not Yellow|Total
-___________________________________________________________________
-Banana      | 400 | 100 || 350 | 150         || 450 | 50  | 500
-Orange      | 0   | 300 || 150 | 150         || 300 | 0   | 300
-Other Fruit | 100 | 100 || 150 | 50          || 50  | 150 | 200
-____________________________________________________________________
-Total       | 500 | 500 || 650 | 350         || 800 | 200 | 1000
-___________________________________________________________________
+___________________________________________________________________  
+Banana      | 400 | 100 || 350 | 150         || 450 | 50  | 500  
+Orange      | 0   | 300 || 150 | 150         || 300 | 0   | 300  
+Other Fruit | 100 | 100 || 150 | 50          || 50  | 150 | 200  
+____________________________________________________________________  
+Total       | 500 | 500 || 650 | 350         || 800 | 200 | 1000  
+___________________________________________________________________  
 
-We can pre-compute a lot of things about our fruit collection.
+We can pre-compute a lot of things about our fruit collection.  
 
 The so-called "Prior" probabilities. (If we didn't know any of the fruit attributes, this would be our guess.) These are our base rates.
 
-P(Banana) = 0.5 (500/1000)
-P(Orange) = 0.3
-P(Other Fruit) = 0.2
-Probability of "Evidence"
+P(Banana) = 0.5 (500/1000)  
+P(Orange) = 0.3  
+P(Other Fruit) = 0.2  
+Probability of "Evidence"  
 
-p(Long) = 0.5
-P(Sweet) = 0.65
-P(Yellow) = 0.8
-Probability of "Likelihood"
+p(Long) = 0.5  
+P(Sweet) = 0.65  
+P(Yellow) = 0.8  
+Probability of "Likelihood"  
 
-P(Long|Banana) = 0.8
-P(Long|Orange) = 0 [Oranges are never long in all the fruit we have seen.]
+P(Long|Banana) = 0.8  
+P(Long|Orange) = 0 [Oranges are never long in all the fruit we have seen.]  
 ....
 
-P(Yellow|Other Fruit) = 50/200 = 0.25
-P(Not Yellow|Other Fruit) = 0.75
-Given a Fruit, how to classify it?
+P(Yellow|Other Fruit) = 50/200 = 0.25  
+P(Not Yellow|Other Fruit) = 0.75  
+Given a Fruit, how to classify it?  
 
 Let's say that we are given the properties of an unknown fruit, and asked to classify it. We are told that the fruit is Long, Sweet and Yellow. Is it a Banana? Is it an Orange? Or Is it some Other Fruit?
 
 We can simply run the numbers for each of the 3 outcomes, one by one. Then we choose the highest probability and 'classify' our unknown fruit as belonging to the class that had the highest probability based on our prior evidence (our 1000 fruit training set):
 
-**P(Banana|Long, Sweet and Yellow)  **
+**P(Banana|Long, Sweet and Yellow)  **  
   P(Long|Banana) * P(Sweet|Banana) * P(Yellow|Banana) * P(banana)  
 = _______________________________________________________________  
           P(Long) * P(Sweet) * P(Yellow)  
@@ -73,7 +73,7 @@ We can simply run the numbers for each of the 3 outcomes, one by one. Then we ch
 = 0.252 / P(evidence)    
 **P(Orange|Long, Sweet and Yellow) = 0  
 
-**P(Other Fruit|Long, Sweet and Yellow)  **
+**P(Other Fruit|Long, Sweet and Yellow)  **  
 P(Long|Other fruit) * P(Sweet|Other fruit) * P(Yellow|Other fruit) * P(Other Fruit)  
 = ____________________________________________________________________________________  
 P(evidence)
@@ -96,7 +96,7 @@ Assign the class label of whichever is the highest number, and you are done.
 
 ## When to use this model
 
-**Real time Prediction:** Naive Bayes is an eager learning classifier and it is sure fast. Thus, it could be used for making predictions in real time.
-**Multi class Prediction:** This algorithm is also well known for multi class prediction feature. Here we can predict the probability of multiple classes of target variable.
-**Text classification/ Spam Filtering/ Sentiment Analysis: **Naive Bayes classifiers mostly used in text classification (due to better result in multi class problems and independence rule) have higher success rate as compared to other algorithms. As a result, it is widely used in Spam filtering (identify spam e-mail) and Sentiment Analysis (in social media analysis, to identify positive and negative customer sentiments)
-**Recommendation System:** Naive Bayes Classifier and Collaborative Filtering together builds a Recommendation System that uses machine learning and data mining techniques to filter unseen information and predict whether a user would like a given resource or not
+**Real time Prediction:** Naive Bayes is an eager learning classifier and it is sure fast. Thus, it could be used for making predictions in real time.  
+**Multi class Prediction:** This algorithm is also well known for multi class prediction feature. Here we can predict the probability of multiple classes of target variable.  
+**Text classification/ Spam Filtering/ Sentiment Analysis: **Naive Bayes classifiers mostly used in text classification (due to better result in multi class problems and independence rule) have higher success rate as compared to other algorithms. As a result, it is widely used in Spam filtering (identify spam e-mail) and Sentiment Analysis (in social media analysis, to identify positive and negative customer sentiments)  
+**Recommendation System:** Naive Bayes Classifier and Collaborative Filtering together builds a Recommendation System that uses machine learning and data mining techniques to filter unseen information and predict whether a user would like a given resource or not  
