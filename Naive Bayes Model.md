@@ -1,6 +1,6 @@
-**What is it? , How it works? and When to use the Model**
+# What is it? , How it works? and When to use the Model
 
-**What is Naive Bayes Model**
+## What is Naive Bayes Model**
 
 Naive Bayes Model is an old method for classification and predictor selection that is enjoying a renaissance because of its simplicity and stability.
 
@@ -17,7 +17,7 @@ P(E) is the probability of the evidence(regardless of the hypothesis).
 P(E|H) is the probability of the evidence given that hypothesis is true.
 P(H|E) is the probability of the hypothesis given that the evidence is there.
 
-How it works
+## How it works
 
 Fruit Example
 
@@ -94,7 +94,7 @@ P(Orange|Evidence) = z * Prob(Orange) * Prob(Evidence1|Orange) * Prob(Evidence2|
 P(Other|Evidence) = z * Prob(Other) * Prob(Evidence1|Other) * Prob(Evidence2|Other) ...
 Assign the class label of whichever is the highest number, and you are done.
 
-When to use this model
+## When to use this model
 
 Real time Prediction: Naive Bayes is an eager learning classifier and it is sure fast. Thus, it could be used for making predictions in real time.
 Multi class Prediction: This algorithm is also well known for multi class prediction feature. Here we can predict the probability of multiple classes of target variable.
