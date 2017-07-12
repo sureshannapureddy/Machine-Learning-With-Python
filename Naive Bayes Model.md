@@ -1,6 +1,6 @@
 # What is it? , How it works? and When to use the Model
 
-## What is Naive Bayes Model**
+## What is Naive Bayes Model
 
 Naive Bayes Model is an old method for classification and predictor selection that is enjoying a renaissance because of its simplicity and stability.
 
@@ -28,13 +28,13 @@ Let's say that we have data on 1000 pieces of fruit. They happen to be Banana, O
 Whether it is Long Whether it is Sweet and If its color is Yellow.
 This is our 'training set.' We will use this to predict the type of any new fruit we encounter.
 
-Type Long | Not Long || Sweet | Not Sweet || Yellow |Not Yellow|Total
+Type Long | Not Long    || Sweet | Not Sweet || Yellow |Not Yellow|Total
 ___________________________________________________________________
-Banana | 400 | 100 || 350 | 150 || 450 | 50 | 500
-Orange | 0 | 300 || 150 | 150 || 300 | 0 | 300
-Other Fruit | 100 | 100 || 150 | 50 || 50 | 150 | 200
+Banana      | 400 | 100 || 350 | 150         || 450 | 50  | 500
+Orange      | 0   | 300 || 150 | 150         || 300 | 0   | 300
+Other Fruit | 100 | 100 || 150 | 50          || 50  | 150 | 200
 ____________________________________________________________________
-Total | 500 | 500 || 650 | 350 || 800 | 200 | 1000
+Total       | 500 | 500 || 650 | 350         || 800 | 200 | 1000
 ___________________________________________________________________
 
 We can pre-compute a lot of things about our fruit collection.
@@ -63,7 +63,7 @@ Let's say that we are given the properties of an unknown fruit, and asked to cla
 
 We can simply run the numbers for each of the 3 outcomes, one by one. Then we choose the highest probability and 'classify' our unknown fruit as belonging to the class that had the highest probability based on our prior evidence (our 1000 fruit training set):
 
-P(Banana|Long, Sweet and Yellow)  
+**P(Banana|Long, Sweet and Yellow)  **
   P(Long|Banana) * P(Sweet|Banana) * P(Yellow|Banana) * P(banana)  
 = _______________________________________________________________  
           P(Long) * P(Sweet) * P(Yellow)  
@@ -71,9 +71,9 @@ P(Banana|Long, Sweet and Yellow)
 = 0.8 * 0.7 * 0.9 * 0.5 / P(evidence)    
 
 = 0.252 / P(evidence)    
-P(Orange|Long, Sweet and Yellow) = 0  
+**P(Orange|Long, Sweet and Yellow) = 0  
 
-P(Other Fruit|Long, Sweet and Yellow)  
+**P(Other Fruit|Long, Sweet and Yellow)  **
 P(Long|Other fruit) * P(Sweet|Other fruit) * P(Yellow|Other fruit) * P(Other Fruit)  
 = ____________________________________________________________________________________  
 P(evidence)
