@@ -18,3 +18,4 @@ P(H) is the probability of hypothesis H being true. This is known as the prior p
 P(E) is the probability of the evidence(regardless of the hypothesis).
 P(E|H) is the probability of the evidence given that hypothesis is true.
 P(H|E) is the probability of the hypothesis given that the evidence is there.
+
