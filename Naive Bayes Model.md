@@ -71,7 +71,7 @@ We can simply run the numbers for each of the 3 outcomes, one by one. Then we ch
 = 0.8 * 0.7 * 0.9 * 0.5 / P(evidence)    
 
 = 0.252 / P(evidence)    
-**P(Orange|Long, Sweet and Yellow) = 0  
+P(Orange|Long, Sweet and Yellow) = 0  
 
 P(Other Fruit|Long, Sweet and Yellow)  
 P(Long|Other fruit) * P(Sweet|Other fruit) * P(Yellow|Other fruit) * P(Other Fruit)  
