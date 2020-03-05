@@ -29,4 +29,3 @@ print(cnf_matrix_mnb)
  [ 0 0 18]  
  [ 0 0 11]]  
 
-Thanks for reading
